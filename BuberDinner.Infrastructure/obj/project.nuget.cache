@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h4nJ8XTROzI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ahmad\\Desktop\\Tarteeb 7\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ahmad\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.8\\microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\bin\Debug\net9.0\BuberDinner.Contracts.deps.json
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\bin\Debug\net9.0\BuberDinner.Contracts.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\bin\Debug\net9.0\BuberDinner.Contracts.pdb
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.AssemblyInfoInputs.cache
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.AssemblyInfo.cs
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\refint\BuberDinner.Contracts.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.pdb
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\ref\BuberDinner.Contracts.dll

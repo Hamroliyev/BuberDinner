@@ -1,0 +1,15 @@
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net9.0\BuberDinner.Application.deps.json
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net9.0\BuberDinner.Application.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net9.0\BuberDinner.Application.pdb
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDinner.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDinner.Application.AssemblyInfoInputs.cache
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDinner.Application.AssemblyInfo.cs
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDinner.Application.csproj.CoreCompileInputs.cache
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDinner.Application.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\refint\BuberDinner.Application.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDinner.Application.pdb
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\ref\BuberDinner.Application.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net9.0\BuberDinner.Domain.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\bin\Debug\net9.0\BuberDinner.Domain.pdb
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDinner.Application.csproj.AssemblyReference.cache
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Application\obj\Debug\net9.0\BuberDin.E7CA8231.Up2Date
