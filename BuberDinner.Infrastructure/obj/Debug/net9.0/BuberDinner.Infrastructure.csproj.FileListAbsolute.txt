@@ -15,3 +15,4 @@ C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\Bub
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net9.0\BuberDinner.Domain.pdb
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net9.0\BuberDinner.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net9.0\BuberDin.DE1B2DD7.Up2Date
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net9.0\BuberDinner.Infrastructure.sourcelink.json

@@ -1,7 +1,16 @@
+using BuberDinner.Application.Common.Interfaces.Authentication;
+
 namespace BuberDinner.Application.Services.Authetication;
 
 public class AuthenticationService : IAuthenticationService
 {
+    private readonly IJwtTokenGenerator jwtTokenGenerator;
+
+    public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator)
+    {
+        this.jwtTokenGenerator = jwtTokenGenerator;
+    }
+
     public AuthenticationResult LoginAsync(
         string email,
         string password)
@@ -20,11 +29,19 @@ public class AuthenticationService : IAuthenticationService
         string email,
         string password)
     {
+        // Check if user already exists
+
+        // Create user (generate a new user ID, etc.)
+
+        // Generate JWT token
+        Guid userId = Guid.NewGuid();
+        string token = this.jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
+
         return new AuthenticationResult(
-            Id: Guid.NewGuid(),
+            Id: userId,
             FirstName: firstName,
             LastName: lastName,
             Email: email,
-            Token: "sample-token-456");
+            Token: token);
     }
 }

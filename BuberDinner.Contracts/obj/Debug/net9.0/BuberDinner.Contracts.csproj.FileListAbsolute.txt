@@ -9,3 +9,4 @@ C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\Bub
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\refint\BuberDinner.Contracts.dll
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.pdb
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\ref\BuberDinner.Contracts.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Contracts\obj\Debug\net9.0\BuberDinner.Contracts.sourcelink.json
