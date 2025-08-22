@@ -48,3 +48,6 @@ C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\Bub
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net9.0\ErrorOr.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net9.0\MediatR.dll
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Api\bin\Debug\net9.0\MediatR.Contracts.dll

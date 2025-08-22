@@ -1,4 +1,6 @@
 using System.Diagnostics;
+using BuberDinner.Api.Common.Http;
+using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -95,5 +97,12 @@ public class BuberDinnerProblemDetailsFactory : ProblemDetailsFactory
         }
 
         _configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
+
+        var errors = httpContext?.Items[HttpContextItemKeys.Errors] as List<Error>;
+
+        if (errors is not null && errors.Count > 0)
+        {
+            problemDetails.Extensions.Add("errors", errors.Select(e => e.Code ));
+        }
     }
 }

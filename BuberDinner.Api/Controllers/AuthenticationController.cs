@@ -1,55 +1,64 @@
-using BuberDinner.Application.Services.Authetication;
+using BuberDinner.Application.Authentication.Commands.Register;
+using BuberDinner.Application.Authentication.Common;
+using BuberDinner.Application.Authentication.Queries.Login;
 using BuberDinner.Contracts.Authentication;
+using ErrorOr;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BuberDinner.Api.Controllers
 {
-    [ApiController]
     [Route("auth")]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : ApiController
     {
-        private readonly IAuthenticationService authenticationService;
+        private readonly IMediator mediator;
 
-        public AuthenticationController(IAuthenticationService authenticationService)
+        public AuthenticationController(IMediator mediator)
         {
-            this.authenticationService = authenticationService;
+            this.mediator = mediator;
         }
 
         [HttpPost("register")]
-        public IActionResult Register([FromBody] RegisterRequest request)
+        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
-            var authResult = this.authenticationService.RegisterAsync(
+            RegisterCommand command = new(
                 request.FirstName,
                 request.LastName,
                 request.Email,
                 request.Password);
 
-            var response = new AuhtecticationResponse(
-                Id: authResult.User.Id,
-                FirstName: authResult.User.FirstName,
-                LastName: authResult.User.LastName,
-                Email: authResult.User.Email,
-                Token: authResult.Token
-            );
+            ErrorOr<AuthenticationResult> authResult = this.mediator.Send(command).Result;
 
-            return Ok(response);
+            return authResult.Match(
+                authResult => Ok(MapAuthResult(authResult)),
+                errors => Problem(errors));
         }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
-            var authResult = this.authenticationService.LoginAsync(
+            LoginQuery query = new(
                 request.Email,
                 request.Password);
-            
-            var response = new AuhtecticationResponse(
-                Id: authResult.User.Id,
-                FirstName: authResult.User.FirstName,
-                LastName: authResult.User.LastName,
-                Email: authResult.User.Email,
-                Token: authResult.Token);
 
-            return Ok(response);
+            ErrorOr<AuthenticationResult> authResult = this.mediator.Send(query).Result;
+
+            var response = MapAuthResult(authResult.Value);
+
+            return authResult.Match(
+                authResult => Ok(MapAuthResult(authResult)),
+                errors => Problem(errors));
+        }
+        
+         private static AuhtecticationResponse MapAuthResult(AuthenticationResult authResult)
+        {
+            return new AuhtecticationResponse(
+                            Id: authResult.User.Id,
+                            FirstName: authResult.User.FirstName,
+                            LastName: authResult.User.LastName,
+                            Email: authResult.User.Email,
+                            Token: authResult.Token
+                        );
         }
     }
 }

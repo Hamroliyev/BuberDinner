@@ -10,3 +10,4 @@ C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\Bub
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Domain\obj\Debug\net9.0\BuberDinner.Domain.pdb
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Domain\obj\Debug\net9.0\ref\BuberDinner.Domain.dll
 C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Domain\obj\Debug\net9.0\BuberDinner.Domain.sourcelink.json
+C:\Users\ahmad\Desktop\Tarteeb 7\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Domain\obj\Debug\net9.0\BuberDinner.Domain.csproj.AssemblyReference.cache

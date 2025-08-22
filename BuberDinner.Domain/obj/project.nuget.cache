@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nPVKrm7eNVE=",
+  "dgSpecHash": "ELjz2/OHFOg=",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmad\\Desktop\\Tarteeb 7\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ahmad\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
