@@ -24,6 +24,8 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, ErrorOr<A
         RegisterCommand command,
         CancellationToken cancellationToken)
     {
+        await Task.CompletedTask;
+
         // 1. Validate the user does not already exist
         if (this.userRepository.GetUserByEmail(command.Email) is not null)
         {
