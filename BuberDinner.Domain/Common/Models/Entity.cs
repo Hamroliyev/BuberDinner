@@ -34,4 +34,9 @@ public abstract class Entity<TId> : IEquatable<Entity<TId>>
     {
         return !Equals(left, right);
     }
+
+    public override int GetHashCode()
+    {
+        return Id.GetHashCode();
+    }
 }
