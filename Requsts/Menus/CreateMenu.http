@@ -1,0 +1,24 @@
+@host=http://localhost:5108
+@token=your_jwt_token_here
+@hostId=abs
+
+POST {{host}}/hosts/{{hostId}}/menus
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Yummy Menu",
+    "description": "A delicious menu full of tasty treats",
+    "sections":[
+        {
+            "name": "Appetizers",
+            "description": "Start your meal with a bang!",
+            "items": [
+                {
+                    "name": "Bruschetta",
+                    "description": "Grilled bread topped with fresh tomatoes, garlic, basil, and olive oil."
+                }
+            ]
+        }
+    ]
+}

@@ -1,4 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
 using BuberDinner.Domain.Common.Models;
 using BuberDinner.Domain.Dinner.Entities;
 using BuberDinner.Domain.Dinner.ValueObjects;
