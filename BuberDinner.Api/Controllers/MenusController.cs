@@ -1,5 +1,6 @@
 using BuberDinner.Application.Menus.Commands.CreateMune;
 using BuberDinner.Contracts.Menus;
+using ErrorOr;
 using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -19,13 +20,15 @@ public class MenusController : ApiController
         this.mediator = mediator;
     }
     [HttpPost]
-    public IActionResult CreateMenu(
+    public Task<IActionResult> CreateMenu(
         CreateMenuRequest request,
         string hostId)
     {
         var command = mapper.Map<CreateMenuCommand>((request, hostId));
         var createMuneResult = mediator.Send(command);
 
-        return Ok(request);
+        return createMuneResult.Match(
+            menu => Ok(this.mapper.Map<MenuResponse>(menu)),
+            errors => Problem(errors));
     }
 }

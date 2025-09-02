@@ -13,10 +13,12 @@ public record MenuResponse(
     DateTime UpdatedDateTime);
 
 public record MenuSectionResponse(
+    Guid Id,
     string Name,
     string Description,
     List<MenuItemResponse> Items);
 
 public record MenuItemResponse(
+    Guid Id,
     string Name,
     string Description);
