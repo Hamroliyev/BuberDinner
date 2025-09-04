@@ -25,17 +25,17 @@ public class MenuConfigurations : IEntityTypeConfiguration<Menu>
 
             sectionBuilder.WithOwner().HasForeignKey("MenuId");
 
-            sectionBuilder.Property(s => s.Id)
+            sectionBuilder.Property(section => section.Id)
                 .HasColumnName("Id")
                 .ValueGeneratedNever()
                 .HasConversion(
                     id => id.Value,
                     value => MenuSectionId.Create(value));
 
-            sectionBuilder.Property(s => s.Name)
+            sectionBuilder.Property(section => section.Name)
                 .HasMaxLength(100);
 
-            sectionBuilder.Property(s => s.Description)
+            sectionBuilder.Property(section => section.Description)
                 .HasMaxLength(1000);
         });
     }
