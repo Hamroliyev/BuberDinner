@@ -3,15 +3,15 @@ using BuberDinner.Domain.Menu.ValueObjects;
 
 namespace BuberDinner.Domain.Menu.Entities;
 
-public sealed class MenuSection : Entity<MuneSectionId>
+public sealed class MenuSection : Entity<MenuSectionId>
 {
-    private readonly List<MenuItem> _menuItems = new();
+    private readonly List<MenuItem> _menuItems;
     public string Name { get; }
     public string Description { get; }
     public IReadOnlyList<MenuItem> MenuItems => _menuItems.AsReadOnly();
 
     private MenuSection(
-        MuneSectionId menuSectionId,
+        MenuSectionId menuSectionId,
         string name,
         string description,
         List<MenuItem>? menuItems)
@@ -19,7 +19,7 @@ public sealed class MenuSection : Entity<MuneSectionId>
     {
         Name = name;
         Description = description;
-        this._menuItems = menuItems ?? new List<MenuItem>();
+        _menuItems = menuItems ?? new List<MenuItem>();
     }
 
     public static MenuSection Create(
@@ -28,7 +28,7 @@ public sealed class MenuSection : Entity<MuneSectionId>
         List<MenuItem>? menuItems)
     {
         return new(
-            MuneSectionId.CreateUnique(),
+            MenuSectionId.CreateUnique(),
             name,
             description,
             menuItems);

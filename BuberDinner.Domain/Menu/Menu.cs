@@ -33,7 +33,7 @@ public sealed class Menu : AggregateRoot<MenuId>
         Name = name;
         Description = description;
         HostId = hostId;
-        this._sections = sections;
+        _sections = sections;
     }
 
     public static Menu Create(
