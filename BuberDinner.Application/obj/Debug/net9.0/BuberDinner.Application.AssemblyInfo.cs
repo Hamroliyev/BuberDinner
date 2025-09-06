@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuberDinner.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ad97da6e77dc4809c00045c51f7363ebb53c4bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acdd813a5e54a6d58dfb1934d71f4f6600b28e87")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuberDinner.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuberDinner.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

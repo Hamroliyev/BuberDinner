@@ -12,15 +12,15 @@ public sealed class Menu : AggregateRoot<MenuId>
     private readonly List<MenuSection> _sections = new();
     private readonly List<DinnerId> _dinners = new();
     private readonly List<MenuReviewId> _menuReviews = new();
-    public string Name { get; }
-    public string Description { get; }
-    public float AverageRating { get; } = 0;
+    public string Name { get; private set; }
+    public string Description { get; private set; }
+    public float AverageRating { get; private set; } = 0;
     public IReadOnlyList<MenuSection> Sections => _sections.AsReadOnly();
     public HostId HostId { get; }
     public IReadOnlyList<DinnerId> Dinners => _dinners.AsReadOnly();
     public IReadOnlyList<MenuReviewId> MenuReviews => _menuReviews.AsReadOnly();
-    public DateTime CreatedDateTime { get; }
-    public DateTime UpdatedDateTime { get; }
+    public DateTime CreatedDateTime { get; private set; }
+    public DateTime UpdatedDateTime { get; private set; }
 
     private Menu(
         MenuId menuId,
@@ -47,6 +47,8 @@ public sealed class Menu : AggregateRoot<MenuId>
             hostId,
             name,
             description,
-            sections ?? new List<MenuSection>());  
+            sections ?? new List<MenuSection>());
     }
+    
+    private Menu(MenuId menuId) : base(menuId) { /* For EF */ }
 }

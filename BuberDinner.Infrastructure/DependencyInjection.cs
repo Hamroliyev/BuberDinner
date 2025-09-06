@@ -23,7 +23,7 @@ public static class DependencyInjection
     {
         services
             .AddAuth(configuration)
-            .AddPersistence();
+            .AddPersistence(configuration);
             
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
@@ -31,14 +31,16 @@ public static class DependencyInjection
     }
 
     public static IServiceCollection AddPersistence(
-        this IServiceCollection services)
+        this IServiceCollection services,
+        ConfigurationManager configuration)
     {
         services.AddDbContext<BuberdinnerDbContext>(options =>
         {
-            options.UseSqlServer();
+            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
         });
+
         services.AddScoped<IUserRepository, UserRepository>();
-        services.AddSingleton<IMenuRepository, MenuRepository>();
+        services.AddScoped<IMenuRepository, MenuRepository>();
 
         return services;
     }

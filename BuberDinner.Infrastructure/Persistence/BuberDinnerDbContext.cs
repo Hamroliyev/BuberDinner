@@ -11,5 +11,12 @@ public class BuberdinnerDbContext : DbContext
 
     }
 
-    public DbSet<Menu> Menus { get; set;} 
+    public DbSet<Menu> Menus { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(BuberdinnerDbContext).Assembly);
+        
+        base.OnModelCreating(modelBuilder);
+    }
 }
