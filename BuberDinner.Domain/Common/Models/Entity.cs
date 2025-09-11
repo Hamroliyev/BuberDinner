@@ -37,6 +37,6 @@ public abstract class Entity<TId> : IEquatable<Entity<TId>>
 
     public override int GetHashCode()
     {
-        return Id.GetHashCode();
+        return Id.GetHashCode();    
     }
 }

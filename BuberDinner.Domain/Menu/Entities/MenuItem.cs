@@ -17,7 +17,7 @@ public sealed class MenuItem : Entity<MenuItemId>
         Name = name;
         Description = description;
     }
-    
+
     public static MenuItem Create(
         string name,
         string description)
