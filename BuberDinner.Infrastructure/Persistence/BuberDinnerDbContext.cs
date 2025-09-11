@@ -15,7 +15,8 @@ public class BuberdinnerDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(BuberdinnerDbContext).Assembly);
+        modelBuilder
+            .ApplyConfigurationsFromAssembly(typeof(BuberdinnerDbContext).Assembly);
         
         base.OnModelCreating(modelBuilder);
     }
